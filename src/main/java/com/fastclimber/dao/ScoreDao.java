@@ -16,7 +16,7 @@ import com.fastclimber.model.Score;
 public class ScoreDao
 {
 	static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";  
-    static final String DB_URL = "jdbc:mysql://fastclimber-mysql:3306/";
+    static final String DB_URL = "jdbc:mysql://mysql:3306/";
     
 
 	public void addScore(Score s)
@@ -26,7 +26,7 @@ public class ScoreDao
 	   try{
 	      Class.forName("com.mysql.jdbc.Driver");
 
-	      conn = DriverManager.getConnection(DB_URL, "root", "root");
+	      conn = DriverManager.getConnection(DB_URL, "userY1A", "2MadtETIH2amBGh3");
 
 	      stmt = conn.createStatement();
 	      
@@ -82,7 +82,7 @@ public class ScoreDao
 		{
 			Class.forName("com.mysql.jdbc.Driver");
 
-		    conn = DriverManager.getConnection(DB_URL, "root", "root");
+		    conn = DriverManager.getConnection(DB_URL, "userY1A", "2MadtETIH2amBGh3");
 
 		    stmt = conn.createStatement();
 
